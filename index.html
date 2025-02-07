@@ -114,7 +114,12 @@
     <div id="layout">
       <header>
         <div class="container">
-          <img class="pointer" src="assets/menu.svg" alt="" />
+          <img
+            onclick="sidebar()"
+            class="pointer"
+            src="assets/menu.svg"
+            alt=""
+          />
 
           <div class="userpin pointer">
             <img id="avatar" src="assets/avatar.jpg" alt="" />
@@ -123,7 +128,7 @@
         </div>
       </header>
       <main id="main">
-        <div class="welcome">
+        <div class="welcome container">
           <h1>Olá visitante</h1>
           <h2>
             Seja bem-vindo a sua mais nova Aplicação Web para Produtividade
@@ -136,7 +141,12 @@
           </ul>
         </div>
       </main>
-      <footer>footer</footer>
+      <footer>
+        <div class="footer container">
+          <p>&copy; Todos os direitos reservados <span>2022 - 2025</span></p>
+        </div>
+      </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

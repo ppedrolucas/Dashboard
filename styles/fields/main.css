@@ -1,3 +1,14 @@
 #main {
   padding: 1rem;
+  .welcome {
+    color: var(--color-gray-700);
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
