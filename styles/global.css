@@ -23,16 +23,31 @@ li {
 body {
   font-family: "Montserrat", sans-serif;
   display: grid;
-  grid-template-columns: minmax(64px, 400px) 1fr;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 1fr;
   /* grid-template-rows: auto-fit 1fr auto-fit; */
-  grid-template-areas: "sidebar content";
+  grid-template-areas: "sidebar layout";
 
   /* TEMPORÁRIO */
   height: 100vh;
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 85rem;
   margin-inline: auto;
   padding-inline: 2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+a {
+  transition: all 200ms linear;
+}
+
+@media (width < 60em) {
+  body {
+    grid-template-columns: 100px 1fr;
+  }
 }
